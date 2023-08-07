@@ -1,0 +1,132 @@
+.main img{
+  width: 100%;
+  height: 110vh;
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+}
+.main{
+  display: flex;
+  height: 120vh;
+  justify-content: center;
+  align-items: center;
+  margin-top: -90px
+}
+.book-footer{
+  margin-top: -55px;
+}
+.containers{
+  max-width: 700px;
+  width: 100%;
+  background: white;
+  padding: 20px 30px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.containers .tittle{
+  font-size: 25px;
+  font-weight: 500;
+  margin-bottom: 12px;
+}
+.containers form .info{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.info .input-box{
+  margin-bottom: 20px ;
+  width: calc(100%/2 - 30px);
+}
+.info .input-box input,
+.two-sec input,
+.two-sec select{
+  height: 40px;
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  font-size: 14px;
+  outline: none;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  border-bottom-width: 2px;
+  background-color: rgba(255, 255, 255, 0.5);
+  transition: all 0.5s ease;
+}
+.input-box span{
+  display: block;
+  font-size: 16px;
+  font-weight: 500;
+}
+.input-box input:focus,
+.input-box input:valid,
+.two-sec input:focus,
+.two-sec input:valid,
+.two-sec select:focus{
+  border-color: orange;
+}
+.radio-box .user-inputs{
+  display: block;
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+.radio-box{
+  margin-top: 5px;
+  margin-right: 50px;
+}
+#num{
+  width:20%;
+  margin-left: 10%;
+}
+#added{
+  display: inline;
+  margin-bottom: 2px;
+}
+#check{
+    background-color: lightblue;
+}
+form .button{
+  height: 45px;
+  margin-top: 45px;
+}
+form .button input{
+  height: 100%;
+  width: 100%;
+  outline: none;
+  color: black;
+  border: none;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 8px;
+  letter-spacing: 1px;
+  background: linear-gradient(135deg, orange ,lightblue);
+}
+form .button input:hover{
+  background: linear-gradient(-135deg, orange ,lightblue);
+}
+.two-sec{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.two-sec span{
+  font-size: 18px;
+  font-weight: 500;
+  margin-right: 8px;
+}
+.two-sec select{
+  width:40%;
+}
+@media ( max-width : 600px){
+  .container{
+    max-width: 100%;
+    margin-top: 120px;
+  }
+  .info .input-box{
+    margin-bottom: 20px ;
+    width: 100%;
+  }
+}

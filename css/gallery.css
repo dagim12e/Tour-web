@@ -1,0 +1,79 @@
+body{
+	justify-content: center;
+}
+.box-container{
+	display: flex;
+	flex-wrap: wrap;
+	padding: 30px;
+	justify-content: space-around;
+	align-items: space-around;
+	max-width: 1200px;
+	padding-left: 120px;
+}
+.box-container .image{
+  	width: calc(100%/4 - 20px);
+	height: 200px;
+	margin-bottom: 20px;
+	object-fit: cover;
+	overflow: hidden;
+	position: relative;
+}
+.image img{
+	width: 100%;
+	height: 100%;
+	border-width: 1px;
+	border-radius: 10px;
+	transition: 0.8s;
+}
+
+.box-container .image .content{
+	position: absolute;
+	left: 0;
+	top: -500%;
+	height: 100%;
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+	padding: 40px;
+	justify-content: center;
+	align-items: center;
+	transition: 1s;
+}
+
+.box-container .image:hover .content{
+	top: 0;
+	cursor: pointer;
+}
+.box-container .image .content h3{
+	font-size: 20px;
+	color: orange;
+	text-align: center;
+}
+.box-container .image .content p{
+	font-size: 15px;
+	color: white;
+	padding: 5px;
+}
+.box-container .image .content button{
+	background-color: orange;
+	border-radius: 30px;
+	width: 120px;
+	border: none;
+	margin-left: 25px;
+}
+
+
+@media (max-width : 900px){
+.container .image{
+  	width: calc(100%/3 - 20px);
+}
+}
+@media (max-width : 650px){
+.container .image{
+  	width: calc(100%/2 - 20px);
+}
+}
+@media (max-width : 400px){
+.container .image{
+  	width: 100%;
+}
+}

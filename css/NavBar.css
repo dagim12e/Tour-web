@@ -1,0 +1,29 @@
+nav{
+  background-color: rgba(0,0,0,0.2);
+  height: 80px;
+  position: fixed;
+  top: 0;
+  left:0;
+  z-index: 999;
+}
+.container .navbar-brand{
+  font-size: 34px;
+}
+.container .navbar-brand span{
+  color: darkorange;
+  font-size: 41px;
+  font-weight: 700;
+  margin-left: 30px;
+}
+.nav-item{
+  color: black;
+  font-weight: 300;
+  transition: 1s ease;
+}
+.nav-link{
+  color: white;
+}
+.navbar-nav a:hover{
+  color: orange;
+  font-weight: 400;
+}
